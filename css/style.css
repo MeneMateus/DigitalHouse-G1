@@ -234,3 +234,19 @@ body section main a.header-novidades:hover{
 }
 
 
+/* FOOTER */
+
+body footer div#footer-marvel {
+    background: rgb(52,52,52);
+    background: linear-gradient(rgba(23,23,23,1) 51%, rgba(52,52,52,1) 100%);
+    display: flex;
+    align-items: center;
+    box-shadow: 15px 15px 15px  15px;
+}
+
+body footer div p{
+    font-family: cursive;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}

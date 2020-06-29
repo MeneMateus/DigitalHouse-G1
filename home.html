@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Comic</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script language="JavaScript">
+		function mostrarElemento(id, visibilidade) {
+			document.getElementById(id).style.display = visibilidade;
+		}
+	</script>
+</head>
+
+<body>
+    <section>
+
+        <header>
+            <nav>
+                <img src="img/logo.png" alt="logo" id="logo-header">
+                <ul id="cabecalho">
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Categorias</button>
+                            <div class="dropdown-content">
+                                <a href="#">Acao</a>
+                                <a href="#">Comédia</a>
+                                <a href="#">Romance</a>
+                                <a href="#">Drama</a>
+                                <a href="#">Terror</a>
+                            </div>
+                    </div>
+
+                    </li>
+                    <li>Lançamentos</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                </ul>
+
+                <img src="img/botao_login.png" alt="login" id="back-botao-login">
+                <button id="btn-login" type="button">Login</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="img-cabecalho-main"></div>
+            <div id="header-novidades">
+                <p class="header-novidades">Novidades</p>
+                <a href="google.com" class="header-novidades">Veja Mais</a>
+            </div>
+            <div id="novidades-hqs">
+                <img src="img/hqs/53.jpg" alt="">
+                <img src="img/hqs/aquaman-hq.jpg" alt="">
+                <img src="img/hqs/capas9.jpg" alt="">
+                <img src="img/hqs/deadpool-cable-split-second.jpg" alt="">
+                <img src="img/hqs/images.jpg" alt="">
+                <img src="img/hqs/unnamed.jpg" alt=""> 
+            </div>
+
+        </main>
+    </section>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

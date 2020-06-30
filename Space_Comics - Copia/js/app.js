@@ -6,17 +6,17 @@
     })
     
     gsap.from('.descrip-box', {
-        duration: 4,
+        duration: 3,
         opacity: 0,
         scale: 0.3,
-        delay: 1
+        delay: 0.5
     })
     
     gsap.from('.botao', {
-        duration: 4,
+        duration: 1,
         opacity: 0,
         scale: 0.3,
-        delay: 2
+        delay: 3
     })
     
     let fechar = document.getElementById('fechar');

@@ -18,3 +18,8 @@ hqsuperman.onclick = function(){
     window.open('./Space_Comics - Copia/index.html')
 }
 
+let logo = document.getElementById('logo-header')
+
+logo.onclick = function(){
+    window.location.href = './home.html'
+}

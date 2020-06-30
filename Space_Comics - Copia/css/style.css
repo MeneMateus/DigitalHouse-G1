@@ -123,8 +123,9 @@ body nav ul#cabecalho li{
   
 
   .dropdown-content a:hover {
-      background-color: rgb(65, 65, 65)
-      
+      background-color: rgb(65, 65, 65);
+      text-decoration: none;
+      color: #797979;
     }
   
 

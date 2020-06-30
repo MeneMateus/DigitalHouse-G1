@@ -25,3 +25,14 @@ let logo = document.getElementById('logo-header')
 logo.onclick = function(){
     window.location.href = './home.html'
 }
+
+/*ANIMATION*/
+
+gsap.from('.options' , {
+    duration: 1,
+    scale: 0.5, 
+    opacity: 0, 
+    delay: 0.5, 
+    stagger: 0.3,
+    force3D: true
+})

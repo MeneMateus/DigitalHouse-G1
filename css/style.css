@@ -259,7 +259,7 @@ body section main a.header-novidades:hover{
     cursor: pointer;
     opacity: 1;
     transform: scale(1.3);
-    border: solid 8px #1a1a1a;
+    /*border: solid 8px #1a1a1a;*/
     z-index: 99;
 }
 
@@ -276,6 +276,7 @@ body section footer div#footer-marvel {
     position: absolute;
     bottom: 0;
     box-shadow: 0 0 15px 0;
+    
 }
 
 body footer div a{
@@ -283,13 +284,7 @@ body footer div a{
     margin-left: auto;
     margin-right: auto;
     color: white;
-
-
-
-
-
-
-    
+    text-decoration: none;  
 }
 
 /* ANIMATION */

@@ -15,8 +15,10 @@ for (let i = 0; i < img.length; i++) {
 let hqsuperman = document.getElementById("hqSuperman");
 
 hqsuperman.onclick = function(){
-    window.open('./Space_Comics - Copia/index.html')
+    window.location.href = './Space_Comics - Copia/index.html'
 }
+
+
 
 let logo = document.getElementById('logo-header')
 

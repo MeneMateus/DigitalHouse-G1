@@ -1,3 +1,4 @@
+      /*ANIMATION*/
 
     gsap.from('#super-man' , {
         duration: 2,
@@ -18,7 +19,7 @@
         scale: 0.3,
         delay: 3
     })
-    
+
     let fechar = document.getElementById('fechar');
     
     fechar.addEventListener("click", function(){

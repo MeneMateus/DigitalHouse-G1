@@ -79,6 +79,10 @@ body nav ul#cabecalho li{
     padding: 0 10px 0 10px;
 }
 
+body nav ul#cabecalho li:hover{
+    color: #891818;
+    cursor: pointer;
+}
 
 .dropbtn{
     list-style: none;

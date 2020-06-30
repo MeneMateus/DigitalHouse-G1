@@ -165,6 +165,28 @@ body section main div#img-cabecalho-main{
 }
 
 
+
+
+
+input#pesquisa{
+    height: 30px;
+    width: 400px;
+    background-color: rgba(52,52,52,1);
+    color: #797979;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 5px 0px 5px 20px;
+    font-size: 18px;
+    outline:none;
+}
+
+
+
+
+
 body section main div#header-novidades{
     width: 100%;
     margin: 0;

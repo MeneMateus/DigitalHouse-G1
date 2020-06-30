@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0 ,1), rgba(0, 0, 0, 0)), url(https://wallpapercave.com/wp/wp3377763.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*NAV-LINKS*/
+
+.hover-red:hover {
+    color: rgb(158, 1, 1) !important;
+}
+
+/*DETAILS*/
+
+.descrip-box .details {
+    font-size: 10px;
+    line-height: 2px;
+}
+
+/*BUTTON*/
+
+.descrip-box button {
+    background-color: rgb(158, 1, 1);
+}
+
+.botao:hover {
+    background-color: rgb(255, 7, 7) !important;
+}

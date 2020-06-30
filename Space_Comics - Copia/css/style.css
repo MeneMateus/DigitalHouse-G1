@@ -11,11 +11,138 @@ body {
     background-size: cover;
 }
 
-/*NAV-LINKS*/
 
-.hover-red:hover {
-    color: rgb(158, 1, 1) !important;
+/*HEADER*/
+
+body nav{
+    width: 100%;
+    height: 90px;
+    background: rgb(52,52,52);
+    background: linear-gradient(rgba(52,52,52,1) 51%, rgba(23,23,23,1) 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 15px 0;
 }
+
+body nav img#logo-header{
+    padding: 0px 0px 0px 10px;
+    height: 70%;
+}
+
+
+body nav img#back-botao-login{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+}
+body nav button#btn-login{
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    right: 0px;
+    align-self: center;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    outline: none;
+}
+
+body nav button#btn-login:hover{
+    cursor: pointer;
+    font-size: 27px;
+    font-family: 'Comic Neue', cursive;
+    color: yellow;
+}
+
+
+body nav ul{
+    padding: 0;
+    margin: 0 10px 0 30px;
+}
+
+body nav ul:hover{
+    cursor: default;
+}
+
+body nav ul#cabecalho li{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #797979;
+    margin: 0 30px 0 30px;
+    padding: 0 10px 0 10px;
+}
+
+
+.dropbtn{
+    list-style: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #797979;
+    margin: 0 30px 0 30px;
+    padding: 0 10px 0 10px;
+    border: none;
+    background-color: transparent;
+  }
+  
+.dropbtn:hover{
+    color: #891818;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+
+  .dropdown-content a {
+    color: #797979;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background: rgb(52,52,52);
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+
+  .dropdown-content a:hover {
+      background-color: rgb(65, 65, 65)
+      
+    }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+
+body section nav ul#cabecalho li:hover{
+    color: #891818;
+    cursor: pointer;
+}
+
+
+
+
+
 
 /*DETAILS*/
 

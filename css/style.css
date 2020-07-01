@@ -283,9 +283,18 @@ body section main a.header-novidades:hover{
 }
 
 
+
 /* LOGIN */
 main#main-login{
     position: relative;
+    align-items: center;
+    justify-content: center;
+}
+/*   ============TELA LOGIN=============   */
+.container-login {
+    width: 100%;
+    min-height: 100vh;
+
     display: flex;
     align-items: center;
     justify-content: center;

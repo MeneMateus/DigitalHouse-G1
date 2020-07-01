@@ -283,33 +283,48 @@ body section main a.header-novidades:hover{
 }
 
 
-/*   ============TELA LOGIN=============   */
-.container-login {
-    width: 100%;
-    min-height: 100vh;
+/* LOGIN */
+main#main-login{
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    padding: 120px;
-    background: rgb(100, 100, 100);
+    justify-content: center;
 }
 
-.wrap-login {
-    width: 960px;
-    border-radius: 10px;
+
+body section main div#img-cabecalho-main-login{
+    width: 100%;
+    height: 80vh;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    opacity: 0.3;
+}
+
+body section main div#area-login{
+    width: 800px;
+    height: 480px;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
     overflow: hidden;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
-.login-pic {
-    width: 326px;
+body section main div#area-login img{
+    width: 40%;
+    height: 110%;
 }
+
+
+
+
+
+
+
+
+
 
 .login-form {
-    width: 50%;
+    width: 60%;
     padding: 20px 80px;
     background: rgba(0, 0, 0, 0.466);
 }
@@ -424,6 +439,15 @@ a {
 .text-center {
     text-align: center!important;
 }
+
+
+
+
+
+
+
+
+
 
 
 /* FOOTER */

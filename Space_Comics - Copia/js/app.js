@@ -1,23 +1,23 @@
       /*ANIMATION*/
 
     gsap.from('#super-man' , {
-        duration: 2,
+        duration: 0.6,
         opacity: 0,
         scale: 0.5,
     })
     
     gsap.from('.descrip-box', {
-        duration: 3,
+        duration: 0.6,
         opacity: 0,
         scale: 0.3,
         delay: 0.5
     })
     
     gsap.from('.botao', {
-        duration: 1,
+        duration: 0.6,
         opacity: 0,
         scale: 0.3,
-        delay: 3
+        delay: 1
     })
 
     let fechar = document.getElementById('fechar');

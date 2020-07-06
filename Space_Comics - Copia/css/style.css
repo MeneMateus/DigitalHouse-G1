@@ -1,54 +1,150 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
-* {
-    font-family: 'Work Sans', sans-serif;
-}
 
 body {
     height: 130vh;
     background-color: black;
-    background-image: linear-gradient(rgba(0, 0, 0 ,1), rgba(0, 0, 0, 0)), url(https://wallpapercave.com/wp/wp3377763.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(https://wallpapercave.com/wp/wp3377763.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     position: relative;
 }
 
+body header nav #btn-login {
+    height: 50px;
+    width: 15%;
+    position: absolute;
+    right: 50px;
+    align-self: center;
+    background-color: #891818;
+    border: none;
+    border-radius: 30px;
+    color: white !important;
+    font-family: 'Comic Neue', cursive;
+    font-size: 25px;
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.4s;
+    outline: none !important;
+    border: none;
+    text-decoration: none !important;
+    bottom: 20px;
+}
+
+body header nav #btn-login:hover {
+    background-color: black;
+}
+
+body header nav #btn-login a {
+    width: 100%;
+    height: 100%;
+}
+
+
+body header nav #btn-login:hover {
+    cursor: pointer;
+    font-size: 27px;
+    font-family: 'Comic Neue', cursive;
+}
+
+#cabecalho-modal-menu {
+    padding: 0;
+    margin: 30px;
+    display: none;
+}
+
+.dropbtn {
+    list-style: none;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    margin: 0 20px 0 20px;
+    padding: 0 10px 0 10px;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.dropdown-modal {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content-modal {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 180px;
+    right: 40px;
+    top: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+.dropdown-content-modal a {
+    color: #797979 !important;
+    padding: 12px 16px;
+    text-decoration: none !important;
+    display: block;
+    background: rgb(52, 52, 52);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.dropdown-content-modal #dropdown-login {
+    color: white !important;
+}
+
+
+.dropdown-content-modal a:hover {
+    background-color: rgb(65, 65, 65)
+}
+
+
+.dropdown-modal:hover .dropdown-content-modal {
+    display: block;
+}
+
 
 /*HEADER*/
 
 
-body nav{
+body nav {
     width: 100%;
     height: 90px;
-    background: rgb(52,52,52);
-    background: linear-gradient(rgba(52,52,52,1) 51%, rgba(23,23,23,1) 100%);
+    background: rgb(52, 52, 52);
+    background: linear-gradient(rgba(52, 52, 52, 1) 51%, rgba(23, 23, 23, 1) 100%);
     position: relative;
     display: flex;
     align-items: center;
     box-shadow: 0 0 15px 0;
 }
 
-body nav img#logo-header{
+body nav img#logo-header {
     padding: 0px 0px 0px 10px;
     height: 70%;
 }
 
-body header img#logo-header:hover{
+body header img#logo-header:hover {
     cursor: pointer;
 }
 
 
-body nav img#back-botao-login{
+body nav img#back-botao-login {
     height: 100%;
     margin: 0;
     padding: 0;
     position: absolute;
     right: 0;
 }
-body nav button#btn-login{
+
+body nav #btn-login {
     height: 100%;
     width: 300px;
     position: absolute;
@@ -62,7 +158,7 @@ body nav button#btn-login{
     outline: none;
 }
 
-body nav button#btn-login:hover{
+body nav #btn-login:hover {
     cursor: pointer;
     font-size: 27px;
     font-family: 'Comic Neue', cursive;
@@ -70,89 +166,90 @@ body nav button#btn-login:hover{
 }
 
 
-body nav ul{
+body nav ul {
     padding: 0;
     margin: 0 10px 0 30px;
 }
 
-body nav ul:hover{
+body nav ul:hover {
     cursor: default;
 }
 
-body nav ul#cabecalho li{
+body nav ul#cabecalho li {
     list-style: none;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    color: #797979;
-    margin: 0 30px 0 30px;
+    font-size: 18px;
+    color: white;
+    margin: 0 20px 0 20px;
     padding: 0 10px 0 10px;
 }
 
-body nav ul#cabecalho li:hover{
+body nav ul#cabecalho li:hover {
     color: #891818;
     cursor: pointer;
 }
 
-.dropbtn{
+.dropbtn {
     list-style: none;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
-    color: #797979;
-    margin: 0 30px 0 30px;
+    font-size: 18px;
+    color: white;
+    margin: 0 20px 0 20px;
     padding: 0 10px 0 10px;
     border: none;
     background-color: transparent;
-  }
-  
-.dropbtn:hover{
-    color: #891818;
-  }
+}
 
-  .dropdown {
+.dropbtn:hover {
+    color: #891818;
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
+}
 
-  .dropdown-content {
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
+}
 
-  .dropdown-content a {
+
+.dropdown-content a {
     color: #797979;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    background: rgb(52,52,52);
+    background: rgb(52, 52, 52);
     font-family: 'Montserrat', sans-serif;
-  }
-  
+}
 
-  .dropdown-content a:hover {
-      background-color: rgb(65, 65, 65);
-      text-decoration: none;
-      color: #797979;
-    }
-  
 
-  .dropdown:hover .dropdown-content {
+.dropdown-content a:hover {
+    background-color: rgb(65, 65, 65);
+    text-decoration: none;
+    color: #797979;
+}
+
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
-  
+}
 
 
-body section nav ul#cabecalho li:hover{
+
+body header nav ul#cabecalho li:hover {
     color: #891818;
     cursor: pointer;
 }
+
 /*DETAILS*/
 
 .descrip-box .details {
@@ -174,17 +271,17 @@ body section nav ul#cabecalho li:hover{
 /*FOOTER*/
 body footer div#footer-marvel {
     width: 100%;
-    background: rgb(52,52,52);
-    background: linear-gradient(rgba(23,23,23,1) 51%, rgba(52,52,52,1) 100%);
+    background: rgb(52, 52, 52);
+    background: linear-gradient(rgba(23, 23, 23, 1) 51%, rgba(52, 52, 52, 1) 100%);
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 0;
     box-shadow: 0 0 15px 0;
-    
+
 }
 
-body footer div#footer-marvel a{
+body footer div#footer-marvel a {
     font-family: cursive;
     margin-top: 10px;
     margin-left: auto;
@@ -192,3 +289,256 @@ body footer div#footer-marvel a{
     color: white;
     text-decoration: none;
 }
+
+@media (max-width: 640px) {
+    body {
+        background-image: none;
+        background-color: #312f2f !important;
+    }
+
+    .image {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        bottom: 25px;
+    }
+
+    body footer div#footer-marvel {
+        position: relative;
+    }
+
+    .stars {
+        display: inline-block;
+    }
+
+    .stars img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .leitura {
+        position: relative;
+        bottom: 8px;
+    }
+
+    .leitura #icon-book {
+        width: 25px;
+        height: 25px;
+    }
+
+    #logo-header {
+        width: 150px;
+        height: 50px !important;
+    }
+}
+
+
+@media only screen and (max-width: 640px) {
+
+    body header main div#area-login {
+        width: 100%;
+        height: 480px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    body header main div#img-cabecalho-main-login {
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/background.jpg);
+        background-size: cover;
+        opacity: 0.3;
+    }
+    img {
+        vertical-align: middle;
+        width: 150px;
+        border-style: none;
+    }
+    body header footer div img {
+        box-shadow: seashell;
+        opacity: 1;
+    }
+    body header footer div p {
+        margin-top: -40px;
+        font-size: 10px;
+        text-align: center;
+        color: white;
+        margin-left: 100px;
+        opacity: 1;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body header footer div#footer-marvel {
+        text-decoration: none;
+        flex-flow: wrap;
+    }
+    main#main-login {
+        width: 100%;
+        height: 86vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    main#main-login {
+    }
+    body header main div#area-login img {
+        width: 0px;
+        height: 0px;
+    }
+    .login-form {
+        width: 100%;
+        padding: 0px 20px;
+        background: rgba(0, 0, 0, 0.466);
+    }
+    main {
+        position: relative;
+        display: flex;
+    }
+
+
+    /*HEADER MAIN*/
+    body header nav{
+        width: 100%;
+        height: 90px;
+        align-items: center;
+    }
+    body header nav #btn-login{
+        display: none;
+    }
+    body header nav #btn-login:hover{
+        font-size: 27px;
+        text-decoration: none;
+    }
+    body header nav ul#cabecalho li{
+        display: none;
+    }
+    .dropbtn{
+        display: none;
+    }
+
+    #cabecalho-modal-menu{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .dropdown-modal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .dropbtn-modal{
+        height: 50px;
+        width: 100px;
+        position: absolute;
+        right: 15px;
+        align-self: center;
+        background-color: #891818;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Comic Neue', cursive;
+        font-size: 25px;
+        outline: none;
+        box-sizing: border-box;
+        transition: all 0.4s;
+        outline: none !important;
+        border: none;
+    }
+    .dropbtn-modal:hover{
+        background-color: black;
+    }
+
+}   
+
+
+
+/* MEDIA */
+
+  @media only screen and (min-width: 641px) and (max-width: 1023px) {
+    .pagina-container .slide {
+      width: 33%;
+    }
+
+    /*HEADER MAIN*/
+    body header nav{
+        width: 100%;
+        height: 90px;
+        align-items: center;
+    }
+    body header nav #btn-login{
+        display: none;
+    }
+    body header nav #btn-login:hover{
+        font-size: 27px;
+    }
+    body header nav ul#cabecalho li{
+        display: none;
+    }
+    .dropbtn{
+        display: none;
+    }
+
+    #cabecalho-modal-menu{
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .dropdown-modal{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .dropbtn-modal{
+        height: 50px;
+        width: 100px;
+        position: absolute;
+        right: 15px;
+        align-self: center;
+        background-color: #891818;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Comic Neue', cursive;
+        font-size: 25px;
+        outline: none;
+        box-sizing: border-box;
+        transition: all 0.4s;
+        outline: none !important;
+        border: none;
+    }
+    .dropbtn-modal:hover{
+        background-color: black;
+    }
+  }
+
+
+
+/* Grande */
+
+  @media only screen and (min-width: 1024px) and (max-width: 1440px) { 
+      
+    .pagina-container {
+      width: 100%;
+    }
+
+  }
+
+
+/* João gordo */
+
+  @media only screen and (min-width: 1441px) {
+      
+    .pagina-container {
+      width: 100%px;
+    }
+            
+  }
+

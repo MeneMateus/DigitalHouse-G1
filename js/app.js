@@ -55,10 +55,10 @@ for (let i = 0; i < img.length; i++) {
 
 
 
-let logo = document.getElementsByClassName('slide')
+let logo = document.getElementById('logo-header')
 
 logo.onclick = function(){
-    window.location.href = './home.html'
+    window.location.href = 'home.html'
 }
 
       /*ANIMATION*/
@@ -70,4 +70,5 @@ logo.onclick = function(){
         stagger: 0.2, 
         force3D: true
 });
+
 

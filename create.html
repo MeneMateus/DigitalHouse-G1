@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Cadastro</title>
+	<title>Create</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="sortcut icon" href="img/LOGO2 - Copia.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-<script language="JavaScript">
-	function mostrarElemento(id, visibilidade) {
-		document.getElementById(id).style.display = visibilidade;
-	}
-</script>
 </head>
+
 <body>
-<section>
-	
+<section id="principal-login">
 	<header>
 		<nav>
-			<img src="img/logo.png" alt="logo" id="logo-header">
-			<ul id="cabecalho"></ul>
+			<a href="home.html"><img src="img/logo.png" alt="logo" id="logo-header"></a>
+			<ul id="cabecalho"></ul>		
 		</nav>
 	</header>
 
 	<main id="main-login">
 		<div id="img-cabecalho-main-login"></div>
-		
 		<div id="area-login">
 			<img src="img/imagem-form.jpg" alt="img-login">
 
@@ -36,49 +30,57 @@
 				</span>
 
 				<div class="wrap-input validate-input">
-					<input class="input" type="text" name="user" placeholder="Nome de usuário">
+					<input class="input" type="text" name="nome" placeholder="Seu nome">
+					<span class="symbol-input">
+						<i class="fa fa-envelope" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="wrap-input validate-input">
+					<input class="input" type="text" name="email" placeholder="Coloque um E-mail">
 					<span class="symbol-input">
 						<i class="fa fa-envelope" aria-hidden="true"></i>
 					</span>
 				</div>
 
 				<div class="wrap-input validate-input">
-					<input class="input" type="email" name="email" placeholder="Insira um e-mail">
-					<span class="symbol-input">
-						<i class="fa fa-envelope" aria-hidden="true"></i>
-					</span>
-				</div>
-
-				<div class="wrap-input validate-input">
-					<input class="input" type="password" name="senha" placeholder="Crie uma senha">
+					<input class="input" type="password" name="senha" placeholder="Escolha uma senha">
 					<span class="symbol-input">
 						<i class="fa fa-lock" aria-hidden="true"></i>
 					</span>
-                </div>
-                
+				</div>
 				<div class="container-login-form-btn">
-					<button class="login-form-btn">
-						<a href=""> Cadastar </a>
+					<button class="login-form-btn" id="btn-login">
+						<a href="home.html"> Entrar </a>
 					</button>
 				</div>
 
-				
 			</form>
 
 		</div>
 		
 	</main>
 
-	<footer style="height: 10vh; width: 100%;">
-		<div id="footer-marvel" style="height: 10vh; width: 100%;display: flex; align-items: center; justify-content: center;">
-			<a href="https://www.marvel.com/" style="margin: 50px 0 0 0;"><p>Direitos reservados a Marvel Comics</p></a>
+</section>
+
+<section id="secundaria">
+	<footer>
+		<div id="footer-marvel">
+			<div class="img-celular"><img src="img/celularhq.png" width="400px">
+			<p>Disponivel no seu celular</p>
+			</div>
+			<div class="img-notebook"><img src="img/notebookhq.png" width="400px">
+			<p>Disponivel no seu pc</p>
+			</div>
+			<ul>
+				<li><a href="https://www.marvel.com/">Direitos reservados a Marvel Comics</a></li>
+				<li><a href="#">Termos de Uso</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Politica de privacidade</a></li>
+			</ul>
+			
 		</div>
 	</footer>
 </section>
-
-
-	</section>
-
 
 <!--===============================================================================================-->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

@@ -373,9 +373,6 @@ body section main div#area-login img{
 }
 
 
-
-
-
 .login-form {
     width: 60%;
     padding: 20px 80px;
@@ -702,8 +699,6 @@ body section footer div p {
         justify-content: center;
         align-items: center;
     }
-    main#main-login {
-    }
     body section main div#area-login img {
         width: 0px;
         height: 0px;
@@ -817,7 +812,12 @@ body section footer div p {
   	margin-left: 30px;
 	margin-top: 20px;
     }
-
+    #arrow-anterior{
+	width: 0px;
+    }
+    #arrow-proximo{
+	width: 0px;
+    }
 }
 
 
@@ -866,8 +866,6 @@ body section footer div p {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-    main#main-login {
     }
     body section main div#area-login img {
         width: 0px;
@@ -959,7 +957,12 @@ body section footer div p {
     section div#segundo-bloco-home{
     	z-index: 10;
     }
-
+    #arrow-anterior{
+	width: 0px;
+    }
+    #arrow-proximo{
+	width: 0px;
+    }
 
 
 }   
@@ -1050,6 +1053,12 @@ body section footer div p {
     section div#segundo-bloco-home button{
     	margin-right: 30px;
     }
+    #arrow-anterior{
+	width: 0px;
+    }
+    #arrow-proximo{
+	width: 0px;
+    }
  }
 
 
@@ -1077,7 +1086,12 @@ body section footer div p {
     section div#segundo-bloco-home{
     	z-index: 10;
     }
-
+    #arrow-anterior{
+	width: 0px;
+    }
+    #arrow-proximo{
+	width: 0px;
+    }
   }
 
 
@@ -1090,4 +1104,7 @@ body section footer div p {
     }
             
   }
+
+
+
 

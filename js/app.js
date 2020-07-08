@@ -35,7 +35,6 @@ $(function(){
     $(".slide").dblclick(function(){
         window.location.href = './Space_Comics - Copia/index.html';
     })
-  
 })
 
 

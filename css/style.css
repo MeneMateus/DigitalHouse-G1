@@ -648,8 +648,9 @@ body section footer div p {
     background-repeat: no-repeat;
 }
 
-
-
+.slick-cloned{
+    visibility: visible;
+}
 
 
 
@@ -1092,6 +1093,7 @@ body section footer div p {
     #arrow-proximo{
 	width: 0px;
     }
+
   }
 
 

@@ -61,7 +61,6 @@ logo.onclick = function(){
 }
 let integrante = document.querySelectorAll('.integrante');
 
-<<<<<<< HEAD
 for (let i = 0; i < integrante.length; i++) {
   integrante[i].onmouseover = function () {
       this.classList.remove('shrink');
@@ -73,7 +72,6 @@ for (let i = 0; i < integrante.length; i++) {
   };
 }
 
-=======
     /*ANIMATION*/
     gsap.from('.options', {
       duration: 1,
@@ -83,4 +81,3 @@ for (let i = 0; i < integrante.length; i++) {
       stagger: 0.2, 
       force3D: true
 });
->>>>>>> 3abc8cdc25498589a76956abcf506c462024bde4

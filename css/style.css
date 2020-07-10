@@ -10,15 +10,12 @@ body {
 
 body section#principal {
     width: 100%;
-<<<<<<< HEAD
     height: 100px;
     background: rgb(52, 52, 52);
     background: linear-gradient(rgba(52, 52, 52, 1) 51%, rgba(23, 23, 23, 1) 100%);
-=======
-    height: 1100px;
+    height: 1050px;
     background: rgb(52,52,52);
     background: linear-gradient(rgba(52,52,52,1) 51%, rgba(23,23,23,1) 100%);
->>>>>>> 3abc8cdc25498589a76956abcf506c462024bde4
     position: relative;
     overflow: hidden;
 }
@@ -1119,6 +1116,11 @@ body section main div#header-sobre {
     margin-bottom: 20px;
 }
 
+#nome-integrante{
+    width: 100%;
+    text-align: center;
+}
+
 
 @media (max-width: 641px){
     .bloco-in{
@@ -1322,12 +1324,11 @@ body section main div#header-sobre {
     #arrow-proximo {
         width: 0px;
     }
-<<<<<<< HEAD
-}
-=======
 
-  }
->>>>>>> 3abc8cdc25498589a76956abcf506c462024bde4
+}
+
+
+
 
 
 /* João gordo */

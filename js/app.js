@@ -19,7 +19,7 @@ $(function(){
     prevArrow: $("#arrow-anterior"),
     nextArrow: $("#arrow-proximo"),
     pauseOnHover: 'on',
-
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 640,

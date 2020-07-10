@@ -32,3 +32,9 @@ logo.onclick = function(){
     window.location.href = '../home.html'
 }
 
+let dataImgHQ = localStorage.getItem('linkImgHQ')
+let dataTitleHQ = localStorage.getItem('valueTitle')
+
+const img = document.getElementById(`super-man`).src = dataImgHQ;
+const title = document.getElementById(`titleHQ`).textContent = dataTitleHQ;
+

@@ -59,15 +59,16 @@ let logo = document.getElementById('logo-header')
 logo.onclick = function(){
     window.location.href = 'home.html'
 }
+let integrante = document.querySelectorAll('.integrante');
 
-      /*ANIMATION*/
-      gsap.from('.options', {
-        duration: 1,
-        scale: 0.5, 
-        opacity: 0, 
-        delay: 0.5, 
-        stagger: 0.2, 
-        force3D: true
-});
-
+for (let i = 0; i < integrante.length; i++) {
+  integrante[i].onmouseover = function () {
+      this.classList.remove('shrink');
+      this.classList.add('grow');
+  };
+  integrante[i].onmouseout = function () {
+      this.classList.remove('grow');
+      this.classList.add('shrink');
+  };
+}
 

@@ -34,7 +34,11 @@ logo.onclick = function(){
 
 let dataImgHQ = localStorage.getItem('linkImgHQ')
 let dataTitleHQ = localStorage.getItem('valueTitle')
+let dataDescHQ = localStorage.getItem('valueDesc');
+let dataAutoresHQ = localStorage.getItem('valueAutores');
 
 const img = document.getElementById(`super-man`).src = dataImgHQ;
 const title = document.getElementById(`titleHQ`).textContent = dataTitleHQ;
+const descricaoHQ = document.getElementById(`p-descricao`).textContent = dataDescHQ;
+const autoresHQ = document.getElementById(`p-autores`).textContent = dataAutoresHQ;
 

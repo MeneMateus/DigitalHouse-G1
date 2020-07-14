@@ -11,7 +11,7 @@ let autores = [];
 
 
 for (let j = 530; j < 537; j++){
-    let url = `http://gateway.marvel.com/v1/public/comics/${j}?ts=${timestamp}&apikey=${apikey}&hash=${hash}`
+    let url = `https://gateway.marvel.com/v1/public/comics/${j}?ts=${timestamp}&apikey=${apikey}&hash=${hash}`
 
     fetch(url).then((resposta) => {
         return resposta.json()
@@ -76,6 +76,37 @@ document.addEventListener('dblclick', function(e){
 
     validaLink(linkImg);
 }, false)
+
+
+
+
+document.addEventListener("touchstart", function(e){
+    let linkImg = e.path[0].src;
+    let posicao = e.path[0].alt;
+    posicao = posicao.substring(3, 4)
+    let titleHQDesc = title[posicao-1]
+    let descHQDesc = description[posicao-1]
+    let autoresHQDesc = autores[posicao-1]
+
+    let autoresString = ''
+    
+    for(let k = 0; k < autoresHQDesc.length; k++){
+        if(autoresHQDesc[k + 1] != undefined){
+            autoresString +=  autoresHQDesc[k] + ', '
+        }else if(autoresHQDesc[k+1] == undefined){
+            autoresString += autoresHQDesc[k]+'.'
+        }
+    }
+
+    localStorage.setItem('linkImgHQ', linkImg);
+    localStorage.setItem('valueTitle', titleHQDesc);
+    localStorage.setItem('valueDesc', descHQDesc);
+    localStorage.setItem('valueDesc', descHQDesc);
+    localStorage.setItem('valueAutores', autoresString);
+
+    validaLink(linkImg);
+}, false)
+
 
 
 function validaLink(linkImg){
